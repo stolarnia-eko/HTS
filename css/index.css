@@ -1,0 +1,12 @@
+li{
+    list-style-type: none;
+    font-size: 3.4rem;
+    background-color: aqua;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 16px;
+}
+p{
+    font-size: 28px;
+    color: rgb(40, 9, 215);
+}
