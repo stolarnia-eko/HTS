@@ -10,3 +10,13 @@ p{
     font-size: 28px;
     color: rgb(40, 9, 215);
 }
+.container{
+    background-color: yellow;
+    margin: auto;
+    width: 380px;
+    height: 100vh;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
