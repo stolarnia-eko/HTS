@@ -15,9 +15,9 @@ p{
     color: rgb(40, 9, 215);
 }
 .container{
-    background-color: yellow;
+    background-color: red;
     margin: auto;
-    width: 380px;
+    width: 360px;
     height: 100vh;
     padding: 10px;
     /* display: flex;
