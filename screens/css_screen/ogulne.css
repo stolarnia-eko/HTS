@@ -1,0 +1,11 @@
+body{
+    padding: 0;
+    margin: 0;
+    color:white;
+    ;
+
+}
+.container{
+    background: linear-gradient(159deg,rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 69%); 
+    padding: 10px;
+}
