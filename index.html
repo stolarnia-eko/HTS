@@ -15,15 +15,20 @@
             <p>Instrukcje do okuwania skrzydel HTS</p>
             <nav>
                 <ul>
-                    <li><a href="screens/ogulne.html">OGOLNE INFO</a></li>
-                    <li><a href="screens/salamander.html">SALAMANDER</a></li>
-                    <li><a href="screens/85.html">85</a></li>
-                    <li><a href="screens/decco.html">DECCO</a></li>
-                    <li><a href="screens/gelian.html">GELIAN</a></li>
+                    <li onclick="select_screen('screens/ogulne.html')">OGOLNE INFO</li>
+                    <li onclick="select_screen('screens/salamander.html')">SALAMANDER</li>
+                    <li onclick="select_screen('screens/85.html')">85</li>
+                    <li onclick="select_screen('screens/decco.html')">DECCO</li>
+                    <li onclick="select_screen('screens/gelian.html')">GELIAN</li>
                 </ul>
             </nav>
         </div>
     </main>
 </body>
+<script>
+    function select_screen(screen) {
+        window.location.href = screen;
+    }
+</script>
 
 </html>
