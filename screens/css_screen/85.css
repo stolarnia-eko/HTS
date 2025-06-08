@@ -8,3 +8,9 @@ body{
     width: 364px;
     padding: 10px; 
 }
+.img_back{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: fixed;
+}
