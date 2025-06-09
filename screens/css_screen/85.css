@@ -14,3 +14,8 @@ body{
     background-color: red;
     position: fixed;
 }
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
