@@ -10,10 +10,15 @@ body{
     margin: auto;
     width: 364px;
 }
-
-img{
+.img_back{
     width: 40px;
     height: 40px;
     position: fixed;
     
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
