@@ -63,13 +63,13 @@
                 <div class="box-form">
                     <h4>Wybierz zasuwnice:</h4>
                     <select name="fruits">
-                        <option value="apple">44</option>
-                        <option value="banana">24</option>
-                        <option value="orange">28</option>
+                        <option value="44">44</option>
+                        <option value="24">24</option>
+                        <option value="28">28</option>
                     </select>
                     <input type="" name="" placeholder="Wpisz wysokosc skrzydla">
-                    <button class="button" type="">Oblicz</button>
-                    <p>Resultat:<span style="background-color=red;">67</span></p>
+                    <button class="button" type="" onclick="click_btn()">Oblicz</button>
+                    <p class='result'>Resultat:<span style="background-color=red;">67</span></p>
                     
                 </div>
                 
@@ -81,5 +81,50 @@
     function back_start() {
         window.location.href = "../index.html";
     }
+    function click_btn() {
+        const select = document.querySelector('select');
+        const input = document.querySelector('input');
+        const result = document.querySelector('.result');
+
+        const zasuwnica = select.value;
+        const wysokoscSkrzydla = parseFloat(input.value);
+
+        // alert(input.value);
+        //alert(select.value);
+        
+        if (isNaN(wysokoscSkrzydla)) {
+            alert("Proszę wpisać prawidłową wysokość skrzydła.");
+            return;
+        }
+
+        // let wynik;
+        switch (zasuwnica) {
+            case '44':
+                if (wysokoscSkrzydla >= 1844 && wysokoscSkrzydla <= 2053){
+                    wynik = 'Bez przedlozki';
+                    } 
+                else if (wysokoscSkrzydla >= 2164 && wysokoscSkrzydla <= 2343) {
+                    wynik = 'Przedlozka cieta 320cm';
+                    } 
+                else if (wysokoscSkrzydla >= 2344 && wysokoscSkrzydla <= 2383) {
+                    wynik = 'Przedlozka cala';
+                    } 
+                else {
+                    alert( 'Верно!' );
+                    }
+                break;
+            case '24':
+                wynik = wysokoscSkrzydla; // Przykładowa logika
+                break;
+            case '28':
+                wynik = wysokoscSkrzydla; // Przykładowa logika
+                break;
+            default:
+                wynik = 0;
+        }
+
+        result.innerText = wynik;
+    }
+
 </script>
 </html>
