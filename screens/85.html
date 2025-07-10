@@ -16,13 +16,26 @@
             </div>
             <h1>85</h1>
             <p>
-                Labiryntowka dlugosc jednakowa w obu skrzydlach, <br/>
+                Labiryntowka dlugosc jednakowa w obu skrzydlach, <br />
                 tylko w jezdnym gora ucieta pod katem <span style="color: red;font-size:30px">20</span> stopni
             </p>
             <p>Otbojnik - 25mm, 45mm</p>
             <p>
                 <span style="color: red;font-size:20px">NIZKA SZYNA:</span> - podkladka pod wozek 8mm
             </p>
+            <h4>Prog Premium</h4>
+            <div class="box2">
+                <p>
+                    Nie dajemy uszczelki. Z dolu skrzydla<br />
+                    przyklejamy czarna gambeczke jak na rysunku, pomiedzy progem a szarym elementem<br />
+                    Ta szara gamke przykrecamy do progu ze strony labiryntowki
+                </p>
+                <img src="assets/perfect1.png" alt="photo proga">
+                <p>
+                    Przykrecamy na 3 wkrety
+                </p>
+                <img src="assets/perfect.png" alt="photo">
+            </div>
 
             <h4>3 - SKRZYDLOWKA:</h4>
             <div class="box1">
@@ -31,18 +44,18 @@
                     listwe dla zaczepow, krore przykrecaja na skladaniu.
                 </p>
                 <p>Z dolu do listwy dajemy gabke, narowno z uszczelka,
-                    
+
                 </p>
                 <img src="" alt="photo dolnej gabki">
                 <p> Z gory tez dajemy gabke</p>
-                
+
                 <img src="" alt="photo gornej gabki">
                 <p>Jeszcze nie robilem</p>
             </div>
             <h4>4 - SKRZYDLOWKA:</h4>
-            <div class="box2">  
+            <div class="box2">
                 <p>
-                    Dwa fixy zwykle, jezdne ACTIVE zwykle.<br/>
+                    Dwa fixy zwykle, jezdne ACTIVE zwykle.<br />
                     W skrzydlie pasywnym dajemy listwe, ktora zakrywa zasuwnice,
                     gore frezujemy.<br />
                 </p>
@@ -57,7 +70,7 @@
                     Podwyszony poziom
                 </h3>
                 <p>
-                    Przedlozka moze byc cieta: 320cm <br/>
+                    Przedlozka moze byc cieta: 320cm <br />
                     w zaleznosci od wysokosci skrzydla i typu zasuwnicy
                 </p>
                 <div class="box-form">
@@ -70,9 +83,9 @@
                     <input type="" name="" placeholder="Wpisz wysokosc skrzydla">
                     <button class="button" type="" onclick="click_btn()">Oblicz</button>
                     <p class='result'>Resultat:<span style="background-color=red;">67</span></p>
-                    
+
                 </div>
-                
+
             </div>
     </main>
 
@@ -91,7 +104,7 @@
 
         // alert(input.value);
         //alert(select.value);
-        
+
         if (isNaN(wysokoscSkrzydla)) {
             alert("Proszę wpisać prawidłową wysokość skrzydła.");
             return;
@@ -100,18 +113,18 @@
         // let wynik;
         switch (zasuwnica) {
             case '44':
-                if (wysokoscSkrzydla >= 1844 && wysokoscSkrzydla <= 2053){
+                if (wysokoscSkrzydla >= 1844 && wysokoscSkrzydla <= 2053) {
                     wynik = 'Bez przedlozki';
-                    } 
+                }
                 else if (wysokoscSkrzydla >= 2164 && wysokoscSkrzydla <= 2343) {
                     wynik = 'Przedlozka cieta 320cm';
-                    } 
+                }
                 else if (wysokoscSkrzydla >= 2344 && wysokoscSkrzydla <= 2383) {
                     wynik = 'Przedlozka cala';
-                    } 
+                }
                 else {
-                    alert( 'Верно!' );
-                    }
+                    alert('Верно!');
+                }
                 break;
             case '24':
                 wynik = wysokoscSkrzydla; // Przykładowa logika
@@ -127,4 +140,5 @@
     }
 
 </script>
+
 </html>
